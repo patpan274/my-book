@@ -11,10 +11,9 @@
   color: #EFEABB;
 }
 
-.card-body{
-  position: relative;
-  border-radius: 20px;
-  box-shadow: 20px 20px 20px #a19b9b
+.book-shadow {
+    box-shadow: 0 0 25px 8px rgba(62, 58, 58, 0.6);
+    border-radius: 20px;
 }
 
 .about-details{
@@ -23,6 +22,10 @@
     font-style: normal;
     font-size: 40px;
     color: #242420;
+}
+
+h2{
+  font-size: 35px;
 }
 
 .nav-menu li {
@@ -119,7 +122,7 @@ body {
             margin: 0;
             padding: 0;
             font-family: sans-serif;
-            min-height: 200vh; /* สร้างความสูงจำลองเพื่อทดสอบการเลื่อนหน้าจอ */
+            min-height: 120vh; /* สร้างความสูงจำลองเพื่อทดสอบการเลื่อนหน้าจอ */
             padding-top: 80px; /* เว้นพื้นที่ด้านบนเพื่อไม่ให้เนื้อหาถูกแถบเมนูทับ */
         }
 
@@ -378,3 +381,126 @@ body {
 
 
 
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,*::before,*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 1rem 0;
+  display: grid;
+  place-content: center;
+  
+  .cards {    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    pointer-events: none;
+  }
+  
+  .card {
+    max-width: 25rem;
+    color: #fff;
+    padding: 2rem;
+    background-color: #362b2b;
+    
+    pointer-events: auto;
+    
+    transform: scale(1);
+    opacity: 1;
+    transition: all 150ms ease-in-out; 
+    
+    display: flex;
+    flex-direction: column;
+    
+    .card-title {
+      position: relative;
+      
+      &::before {
+        content: "";
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+        box-shadow: inset 0 0 3px #bb86fc;
+        background-color: #bb86fc;
+        
+        position: absolute;
+        right: 0;
+      }
+    }
+    
+    .date {
+      color: #bb86fc;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .description {
+      font-size: 1rem;
+    }
+    
+    &:nth-child(even) {
+      transform: translateY(8px);
+    }
+    
+    &:nth-child(n) {
+      transform: rotate(-2.5deg);
+    }
+  }
+}
+
+.cards:hover > .card:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.cards:hover > .card:not(:hover) {
+  opacity: 0.5;
+}
+
+
+
+.about.at {
+  background-color: #fc3153;
+  text-align: center;
+}
+
+h3 {
+  font-size: 80pt;
+  font-family: 'Luckiest Guy';
+  color: #F3E4C9;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow:   0px -6px 0 #0A2947,  
+                 0px -6px 0 #0A2947,
+                 0px  6px 0 #0A2947,
+                 0px  6px 0 #0A2947,
+                -6px  0px 0 #0A2947,  
+                 6px  0px 0 #0A2947,
+                -6px  0px 0 #0A2947,
+                 6px  0px 0 #0A2947,
+                -6px -6px 0 #0A2947,  
+                 6px -6px 0 #0A2947,
+                -6px  6px 0 #0A2947,
+                 6px  6px 0 #0A2947,
+                -6px  18px 0 #0A2947,
+                 0px  18px 0 #0A2947,
+                 6px  18px 0 #0A2947,
+                 0 19px 1px rgba(0,0,0,.1),
+                 0 0 6px rgba(0,0,0,.1),
+                 0 6px 3px rgba(0,0,0,.3),
+                 0 12px 6px rgba(0,0,0,.2),
+                 0 18px 18px rgba(0,0,0,.25),
+                 0 24px 24px rgba(0,0,0,.2),
+                 0 36px 36px rgba(0,0,0,.15);
+}
