@@ -1,0 +1,506 @@
+
+.hero-bg {
+  background-image: linear-gradient(to bottom,#fff,#6A1E55, #3B1C32,#6A1E55,#fff);
+}
+
+.shadow-black {
+    box-shadow: 0 0 25px rgba(6, 6, 6, 0.7);
+}
+
+.text-color{
+  color: #EFEABB;
+}
+
+.book-shadow {
+    box-shadow: 0 0 25px 8px rgba(62, 58, 58, 0.6);
+    border-radius: 20px;
+}
+
+.about-details{
+  font-family: "Kodchasan", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 40px;
+    color: #242420;
+}
+
+h2{
+  font-size: 35px;
+}
+
+.nav-menu li {
+    position: relative;
+    padding: 14px 14px;
+    border-radius: 40px;
+    transition: color 0.6s;
+    color: #111;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.nav-menu li::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: #000;
+    clip-path: circle(0% at 50% 50%);
+    transition: clip-path 0.6 cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-menu li:hover {
+    color: white;
+}
+
+.nav-menu li:hover::before {
+    clip-path: circle(100% at 50% 50%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: #fff;
+    font-family: Inter, sans-serif;
+}
+
+/* posisi tengah */
+
+.nav-wrapper {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+/* container utama */
+
+.nav-pill {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 14px;
+    background: #fff;
+    border: 2px solid #111;
+    border-radius: 999px;
+    box-shadow: 0 6px 0 #111;
+}
+
+/* logo kiri */
+
+.logo {
+    width: 32px;
+    height: 32px;
+    border: 2px solid #111;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+}
+
+/* menu tengah */
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0 8px;
+}
+
+.nav-menu li {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            min-height: 120vh; /* สร้างความสูงจำลองเพื่อทดสอบการเลื่อนหน้าจอ */
+            padding-top: 80px; /* เว้นพื้นที่ด้านบนเพื่อไม่ให้เนื้อหาถูกแถบเมนูทับ */
+        }
+
+        /* ตรึงตำแหน่งไว้บนสุด และจัดให้อยู่ตรงกลางหน้าจอ */
+        .nav-wrapper {
+            position: fixed;        /* ตรึงตำแหน่งไว้กับหน้าจอขณะ Scroll */
+            top: 20px;              /* เว้นระยะห่างจากขอบบนเล็กน้อย (ปรับเป็น 0 ได้หากต้องการชิดขอบบนสุด) */
+            left: 50%;              /* วางจุดเริ่มต้นไว้ที่กึ่งกลางหน้าจอ */
+            transform: translateX(-50%); /* เลื่อนกลับมาทางซ้าย 50% ของความกว้างตัวเอง เพื่อให้อยู่ตรงกลางพอดี */
+            z-index: 1000;          /* ให้อยู่ชั้นบนสุดเสมอ */
+        }
+
+        /* ตกแต่งแถบนำทางทรงแคปซูล (Pill) */
+        .nav-pill {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            background-color: #ffffff;
+            padding: 10px 24px;
+            border-radius: 999px; /* ทำมุมโค้งมนทรง Pill */
+            box-shadow: 5 4px 20px rgba(70, 148, 113, 0.1); /* เพิ่มเงาให้นูนขึ้นมา */
+
+        }
+
+        .Logo {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        }
+
+        .nav-menu li {
+            cursor: pointer;
+            transition: color 1s ease;
+        }
+
+        .nav-menu li:hover {
+            color: #bd93b8;
+        }
+        
+
+
+.hover-me1{
+    font-family: "Pridi", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.hover-me1{
+    background: #558467;
+    color: #EFEABB;
+    width: 200px;
+    font-size: 30px;
+    border: none;
+    border-radius: 80px;
+    padding: 32px;
+    box-shadow: inset 10 10 10 #EFEABB;
+    transition: all ease 0.8s;
+}
+
+
+.hover-me1:hover{
+    box-shadow: inset 200px 0 0 #EFEABB;
+    color: #558467;
+}
+
+
+.footer-bg{
+    background-image: linear-gradient(to top,#3B1C32,#6A1E55,#fff);
+
+}
+
+.nav-menu{
+    color:var(--primary-color);
+    background:var(--secondary-color--);
+}
+
+.hero-section{
+    min-height: 100vh;
+    background: var(--primary-color);
+}
+
+.hero-section .section-content{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white-color--);
+    justify-content: space-between;
+}
+
+.hero-section .hero-details .title{
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 30px;
+    color: #EFEABB;
+}
+
+.hero-section .hero-details .subtitle{
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 55px;
+    color: #EFEABB;
+}
+
+
+body {
+  background-color:#fff;
+  color: #212121;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+
+
+.key {
+  font-size: 4vw;
+  display: inline-block;
+  letter-spacing: 2;
+  transition: transform 0.2s;
+}
+
+
+
+@keyframes pressDown1 {
+  30%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  35% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes pressDown2 {
+  70%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes pressDown3 {
+  30%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  35% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes pressDown4 {
+  40%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+  45% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes pressDown5 {
+  20%,
+  30%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes pressDown6 {
+  60%,
+  70%,
+  100% {
+    transform: translateY(0);
+  }
+  65% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes pressDown7 {
+  10%,
+  20%,
+  100% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes pressDown8 {
+  35%,
+  45%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+}
+
+
+
+.key:nth-child(1) {
+  animation: pressDown1 2s infinite;
+}
+
+.key:nth-child(2) {
+  animation: pressDown2 3s infinite;
+}
+
+.key:nth-child(3) {
+  animation: pressDown3 4s infinite;
+}
+
+.key:nth-child(4) {
+  animation: pressDown4 2.5s infinite;
+}
+
+.key:nth-child(5) {
+  animation: pressDown5 2.5s infinite;
+}
+
+.key:nth-child(6) {
+  animation: pressDown6 3.5s infinite;
+}
+
+.key:nth-child(7) {
+  animation: pressDown7 2.2s infinite;
+}
+
+.key:nth-child(8) {
+  animation: pressDown8 3.2s infinite;
+}
+
+
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,*::before,*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 1rem 0;
+  display: grid;
+  place-content: center;
+  
+  .cards {    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    pointer-events: none;
+  }
+  
+  .card {
+    max-width: 25rem;
+    color: #fff;
+    padding: 2rem;
+    background-color: #362b2b;
+    
+    pointer-events: auto;
+    
+    transform: scale(1);
+    opacity: 1;
+    transition: all 150ms ease-in-out; 
+    
+    display: flex;
+    flex-direction: column;
+    
+    .card-title {
+      position: relative;
+      
+      &::before {
+        content: "";
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+        box-shadow: inset 0 0 3px #bb86fc;
+        background-color: #bb86fc;
+        
+        position: absolute;
+        right: 0;
+      }
+    }
+    
+    .date {
+      color: #bb86fc;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .description {
+      font-size: 1rem;
+    }
+    
+    &:nth-child(even) {
+      transform: translateY(8px);
+    }
+    
+    &:nth-child(n) {
+      transform: rotate(-2.5deg);
+    }
+  }
+}
+
+.cards:hover > .card:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.cards:hover > .card:not(:hover) {
+  opacity: 0.5;
+}
+
+
+
+.about.at {
+  background-color: #fc3153;
+  text-align: center;
+}
+
+h3 {
+  font-size: 80pt;
+  font-family: 'Luckiest Guy';
+  color: #F3E4C9;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow:   0px -6px 0 #0A2947,  
+                 0px -6px 0 #0A2947,
+                 0px  6px 0 #0A2947,
+                 0px  6px 0 #0A2947,
+                -6px  0px 0 #0A2947,  
+                 6px  0px 0 #0A2947,
+                -6px  0px 0 #0A2947,
+                 6px  0px 0 #0A2947,
+                -6px -6px 0 #0A2947,  
+                 6px -6px 0 #0A2947,
+                -6px  6px 0 #0A2947,
+                 6px  6px 0 #0A2947,
+                -6px  18px 0 #0A2947,
+                 0px  18px 0 #0A2947,
+                 6px  18px 0 #0A2947,
+                 0 19px 1px rgba(0,0,0,.1),
+                 0 0 6px rgba(0,0,0,.1),
+                 0 6px 3px rgba(0,0,0,.3),
+                 0 12px 6px rgba(0,0,0,.2),
+                 0 18px 18px rgba(0,0,0,.25),
+                 0 24px 24px rgba(0,0,0,.2),
+                 0 36px 36px rgba(0,0,0,.15);
+}
