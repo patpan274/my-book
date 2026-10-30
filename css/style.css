@@ -1,8 +1,9 @@
 
 .hero-bg {
-  background-image: linear-gradient(to bottom,#fff,#6A1E55, #3B1C32,#6A1E55,#fff);
+  background-image: linear-gradient(to bottom,#fff,#e5e682,#e5e682,#fff);
 }
 
+s
 .shadow-black {
     box-shadow: 0 0 25px rgba(6, 6, 6, 0.7);
 }
@@ -16,6 +17,14 @@
     border-radius: 20px;
 }
 
+.topic {
+  font-family: "Kodchasan", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    color: #3d3d37;
+}
+
 .about-details{
   font-family: "Kodchasan", sans-serif;
     font-weight: 550;
@@ -24,14 +33,55 @@
     color: #242420;
 }
 
+
+
+h1 {
+  font-weight: 900;
+  color: #373331;
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 h2{
   font-size: 35px;
+}
+
+h2 {
+  font-family: "Mitr", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #772c5d;
+}
+
+
+.keyboard {
+  color: #e3a54e;
+}
+
+.navbar-brand {
+  margin-top: -70px;
+}
+
+.navbar {
+    background-color: #99c8d4;
+}
+
+.nav-link {
+    transition: 0.3s;
+    margin-top: -70px;
+}
+
+.nav-link:hover {
+    background-color: #4b1839;
+    color: white !important;
+    border-color: #846a6a !important;
 }
 
 .nav-menu li {
     position: relative;
     padding: 14px 14px;
-    border-radius: 40px;
+    border-radius: 50px;
     transition: color 0.6s;
     color: #111;
     overflow: hidden;
@@ -197,9 +247,16 @@ body {
 
 
 .footer-bg{
-    background-image: linear-gradient(to top,#3B1C32,#6A1E55,#fff);
+    background-image: linear-gradient(to top,#b08358,#fff);
 
 }
+
+.footer-fonts {
+font-family: "Yusei Magic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .nav-menu{
     color:var(--primary-color);
